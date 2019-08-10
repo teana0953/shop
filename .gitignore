@@ -1,0 +1,8 @@
+.vs
+/Web/views
+/Web/package-lock.json
+/Web/node_modules
+*.user
+/App/node_modules
+/App/dist
+/App/package-lock.json
