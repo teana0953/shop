@@ -1,26 +1,29 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <app-user></app-user>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <app-header></app-header>
+        <router-view></router-view>
+        <!-- <app-shop></app-shop> -->
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
-    import User from './components/User.vue';
+import Header from "./components/Header.vue";
 
-    export default {
-        components: {
-            appUser: User
-        }
-    }
+export default {
+  components: {
+    appHeader: Header
+    // appShop: Shop
+  }
+};
 </script>
 
 <style>
-    div.component {
-        border: 1px solid black;
-        padding: 30px;
-    }
+div.component {
+  /* border: 1px solid black; */
+  padding: 30px;
+}
 </style>

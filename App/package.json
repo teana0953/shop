@@ -5,11 +5,13 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules && copy .\\index.html ..\\Web\\views /y && copy .\\dist\\build.js ..\\Web\\public\\dist /y"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "vue": "^2.0.1"
+    "vue": "^2.0.1",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.1.2"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
